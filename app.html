@@ -772,16 +772,28 @@ uk: {
    ========================================================= */
 
 (function (X) { Object.keys(X).forEach(function (l) { Object.assign(I18N[l], X[l]); }); })({
-  uk: { emailLabel: 'Електронна пошта', sendLink: 'Надіслати посилання для входу', orEmail: 'або за посиланням на пошту', linkSent: 'Ми надіслали посилання на {e}. Відкрийте лист і натисніть посилання, щоб увійти.', otherEmail: 'Ввести іншу адресу', linkErr: 'Не вдалося надіслати посилання. Спробуйте ще раз за хвилину.',
-    signinNote: 'Доступ мають лише схвалені учасники. Після першого входу адміністраторка розгляне вашу заявку.',
+  uk: {
+    signinNote: 'Вхід лише для членів EFT4UA – через Google-акаунт, який ви вказали при вступі.',
+    noAccessTitle: 'Немає доступу', noAccessText: 'Пошту {e} ще не додано до бібліотеки. Якщо ви член EFT4UA, напишіть адміністраторам, щоб вас додали, або увійдіть з іншого Google-акаунта.',
+    expiredTitle: 'Доступ завершився', expiredText: 'Термін вашого доступу до бібліотеки – до {d} – минув. Після поновлення членства в EFT4UA адміністратори відкриють його знову.', otherAccount: 'Увійти з іншого акаунта',
+    accessTab: 'Доступ', accAddTitle: 'Додати членів', accAddHint: 'Вставте пошти членів EFT4UA – по одній на рядок або через кому. Якщо пошта вже є в списку, для неї просто оновиться дата доступу.', accEmails: 'Пошти (Google-акаунти)', accUntilLabel: 'Доступ до', accUntilHint: 'Залиште порожнім – доступ без обмеження.', accAdd: 'Додати',
+    accNone: 'Не знайдено жодної адреси пошти.', accAdded: 'Додано: {a} · оновлено: {r}', accEmailCol: 'Пошта', accAccessCol: 'Доступ', accUntil: 'до {d}', accNoEnd: 'без обмеження', accExpired: 'завершився {d}', accNotYet: 'Ще не входили', accMakeAdmin: 'Зробити адміном', accUnadmin: 'Зняти адміна',
+    accRemove: 'Забрати доступ', accRemoveT: 'Забрати доступ?', accRemoveX: '{e} більше не зможе увійти. Публікації цієї людини залишаться в бібліотеці.', accRemoved: 'Доступ забрано', accEmpty: 'Список доступу порожній',
+    emailLabel: 'Електронна пошта', sendLink: 'Надіслати посилання для входу', orEmail: 'або за посиланням на пошту', linkSent: 'Ми надіслали посилання на {e}. Відкрийте лист і натисніть посилання, щоб увійти.', otherEmail: 'Ввести іншу адресу', linkErr: 'Не вдалося надіслати посилання. Спробуйте ще раз за хвилину.',
     applyTitle: 'Розкажіть про себе', applyText: 'Щоб адміністратори знали, хто ви, вкажіть ім’я та кілька слів про свою роботу з ЕФТ.', nameLabel: 'Ім’я та прізвище', noteLabel: 'Про себе', applySend: 'Надіслати заявку',
     pendTitle: 'Заявку отримано', pendText: 'Адміністратори розглянуть її найближчим часом. Щойно вас схвалять, бібліотека відкриється тут.',
     welcomeTitle: 'Як вас звати?', welcomeText: 'Ім’я бачитимуть інші учасники біля ваших публікацій і коментарів.', continueBtn: 'Продовжити',
     declinedTitle: 'Доступу немає', declinedText: 'На жаль, доступ до бібліотеки для цього облікового запису не надано.',
     syncErr: 'Не вдалося зберегти. Перевірте з’єднання – сторінку оновлено.', loadErr: 'Не вдалося завантажити бібліотеку. Оновіть сторінку.', uploadErr: 'Не вдалося завантажити файл {n}.', uploading: 'Зачекайте, файли ще завантажуються.', tooBig: 'Файл {n} більший за 50 МБ.',
     previewNA: 'Для цього типу файлу перегляд недоступний – завантажте його.', dropHint: 'PDF, DOCX, PPTX, XLSX, JPG, PNG · до 50 МБ', googlePhotoNote: 'Фото з вашого облікового запису Google.' },
-  en: { emailLabel: 'Email', sendLink: 'Email me a sign-in link', orEmail: 'or with a link by email', linkSent: 'We sent a link to {e}. Open the email and click the link to sign in.', otherEmail: 'Use a different address', linkErr: 'Could not send the link. Please try again in a minute.',
-    signinNote: 'Only approved members have access. After your first sign-in, an admin will review your request.',
+  en: {
+    signinNote: 'For EFT4UA members only – sign in with the Google account you gave when joining.',
+    noAccessTitle: 'No access', noAccessText: '{e} has not been added to the library yet. If you are an EFT4UA member, ask the admins to add you, or sign in with a different Google account.',
+    expiredTitle: 'Access ended', expiredText: 'Your access to the library ended on {d}. Once your EFT4UA membership is renewed, the admins will open it again.', otherAccount: 'Use a different account',
+    accessTab: 'Access', accAddTitle: 'Add members', accAddHint: 'Paste the emails of EFT4UA members – one per line or separated by commas. If an email is already on the list, only its access date is updated.', accEmails: 'Emails (Google accounts)', accUntilLabel: 'Access until', accUntilHint: 'Leave empty for no end date.', accAdd: 'Add',
+    accNone: 'No email address found.', accAdded: 'Added: {a} · updated: {r}', accEmailCol: 'Email', accAccessCol: 'Access', accUntil: 'until {d}', accNoEnd: 'no end date', accExpired: 'ended {d}', accNotYet: 'Not signed in yet', accMakeAdmin: 'Make admin', accUnadmin: 'Remove admin',
+    accRemove: 'Remove access', accRemoveT: 'Remove access?', accRemoveX: '{e} will no longer be able to sign in. Their posts stay in the library.', accRemoved: 'Access removed', accEmpty: 'The access list is empty',
+    emailLabel: 'Email', sendLink: 'Email me a sign-in link', orEmail: 'or with a link by email', linkSent: 'We sent a link to {e}. Open the email and click the link to sign in.', otherEmail: 'Use a different address', linkErr: 'Could not send the link. Please try again in a minute.',
     applyTitle: 'Tell us about yourself', applyText: 'So the admins know who you are, add your name and a few words about your EFT work.', nameLabel: 'Full name', noteLabel: 'About you', applySend: 'Send request',
     pendTitle: 'Request received', pendText: 'The admins will review it soon. As soon as you are approved, the library opens here.',
     welcomeTitle: 'What is your name?', welcomeText: 'Other members see your name next to your posts and comments.', continueBtn: 'Continue',
@@ -1140,26 +1152,19 @@ function signinShell(inner) {
   '</div>';
 }
 function vLogin() {
-  var form = UI.linkSent
-    ? '<p class="ep-signin__text">' + esc(t('linkSent', { e: UI.linkSent })) + '</p><button class="ep-btn ep-btn--text ep-btn--sm" data-act="other-email">' + t('otherEmail') + '</button>'
-    : (CFG.google ? '<button class="gbtn" data-act="login"><span class="gdot" aria-hidden="true"></span>' + t('signinBtn') + '</button><span class="signin-or">' + t('orEmail') + '</span>' : '') +
-      '<form class="signin-form" id="signin-form"><label class="sr" for="signin-email">' + t('emailLabel') + '</label><input class="ep-input" id="signin-email" type="email" required autocomplete="email" placeholder="' + esc(t('emailLabel')) + '">' +
-      '<button class="ep-btn ep-btn--primary" type="submit">' + t('sendLink') + '</button></form>';
   return signinShell('<h1 class="ep-signin__title">' + t('signinTitle') + '</h1>' +
-    '<p class="ep-signin__text">' + t('signinText') + '</p>' + form +
+    '<p class="ep-signin__text">' + t('signinText') + '</p>' +
+    '<button class="gbtn" data-act="login"><span class="gdot" aria-hidden="true"></span>' + t('signinBtn') + '</button>' +
     '<p class="ep-signin__note">' + t('signinNote') + '</p>');
 }
 function vPending() {
   var u = S.user, st = u.status, body;
-  if (st === 'declined' || st === 'removed') body = '<h1 class="ep-signin__title">' + t('declinedTitle') + '</h1><p class="ep-signin__text">' + t('declinedText') + '</p>' + (u.reason ? '<p class="ep-signin__note">„' + esc(u.reason) + '“</p>' : '');
-  else if (st === 'member' || !u.note) {
-    var apply = st !== 'member';
-    body = '<h1 class="ep-signin__title">' + t(apply ? 'applyTitle' : 'welcomeTitle') + '</h1><p class="ep-signin__text">' + t(apply ? 'applyText' : 'welcomeText') + '</p>' +
-      '<form class="signin-form" id="apply-form"><div class="ep-field"><label class="ep-field__label" for="ap-name">' + t('nameLabel') + '</label><input class="ep-input" id="ap-name" required maxlength="80" autocomplete="name" value="' + esc(u.needsName ? '' : user(ME).name) + '"></div>' +
-      (apply ? '<div class="ep-field"><label class="ep-field__label" for="ap-note">' + t('noteLabel') + '</label><textarea class="ep-input" id="ap-note" rows="3" maxlength="400" required></textarea></div>' : '') +
-      '<button class="ep-btn ep-btn--primary" type="submit">' + t(apply ? 'applySend' : 'continueBtn') + '</button></form>';
-  } else body = '<h1 class="ep-signin__title">' + t('pendTitle') + '</h1><p class="ep-signin__text">' + t('pendText') + '</p>';
-  return signinShell(body + '<p class="ep-signin__note">' + esc(u.email) + ' · <button class="linkbtn" data-act="logout">' + t('logout') + '</button></p>');
+  if (st === 'noaccess') body = '<h1 class="ep-signin__title">' + t('noAccessTitle') + '</h1><p class="ep-signin__text">' + esc(t('noAccessText', { e: u.email })) + '</p>';
+  else if (st === 'expired') body = '<h1 class="ep-signin__title">' + t('expiredTitle') + '</h1><p class="ep-signin__text">' + esc(t('expiredText', { d: fdate(u.expiresOn + 'T12:00:00') })) + '</p>';
+  else body = '<h1 class="ep-signin__title">' + t('welcomeTitle') + '</h1><p class="ep-signin__text">' + t('welcomeText') + '</p>' +
+      '<form class="signin-form" id="apply-form"><div class="ep-field"><label class="ep-field__label" for="ap-name">' + t('nameLabel') + '</label><input class="ep-input" id="ap-name" required maxlength="80" autocomplete="name"></div>' +
+      '<button class="ep-btn ep-btn--primary" type="submit">' + t('continueBtn') + '</button></form>';
+  return signinShell(body + '<p class="ep-signin__note">' + esc(u.email) + ' · <button class="linkbtn" data-act="logout">' + t(st === 'member' ? 'logout' : 'otherAccount') + '</button></p>');
 }
 
 /* ---------- Ansicht: Bibliothek ---------- */
@@ -1734,7 +1739,6 @@ function vMembers() {
     if (M.sort === 'posts') return y.n - x.n || x.u.name.localeCompare(y.u.name, 'uk');
     return (y.a.lastActive || '').localeCompare(x.a.lastActive || '') || y.a.joinedAt.localeCompare(x.a.joinedAt);
   });
-  var apps = (S.applicants || []).slice().sort(function (x, y) { return y.appliedAt.localeCompare(x.appliedAt); });
   var sel = function (id, opts, cur, label) { return '<label class="shelf-sel"><span class="sr">' + label + '</span><select class="ep-input" id="' + id + '">' + opts.map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === cur ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('') + '</select></label>'; };
   var memberTab = '<div class="shelf-tools">' +
       '<label class="ep-search shelf-search"><span class="sr">' + t('searchLabel') + '</span>' + icon('search', true) + '<input id="members-q" type="search" placeholder="' + esc(t('memSearch')) + '" value="' + esc(M.q) + '"></label>' +
@@ -1748,32 +1752,27 @@ function vMembers() {
           '<td class="num" data-l="' + esc(t('posts').toLowerCase()) + '">' + x.n + '</td><td class="col-joined">' + fdate(x.a.joinedAt) + '</td><td>' + (x.a.lastActive ? rel(x.a.lastActive) : t('memNever')) + '</td><td class="mem-act">' + (x.id === ME ? '' : '<button class="ep-iconbtn mem-del" data-act="mem-delete" data-id="' + x.id + '" aria-label="' + esc(t('memDelete', { n: x.u.name })) + '" title="' + esc(t('memDeleteShort')) + '">' + icon('trash') + '</button>') + '</td></tr>';
       }).join('') + '</tbody></table></div>'
       : '<div class="empty"><p class="ep-card__title">' + t('memEmpty') + '</p></div>');
-  var af = M.appFilter || 'open';
-  var shown = apps.filter(function (p) { return af === 'open' ? p.status === 'pending' : p.status !== 'pending'; });
-  if (af !== 'open') shown.sort(function (x, y) { return (y.decidedAt || '').localeCompare(x.decidedAt || ''); });
-  var decidedN = apps.length - applicantsOpenN();
-  var appCard = function (p) {
-    var st = p.status === 'pending' ? '<span class="ep-badge ep-badge--warning">' + t('appPending') + '</span>' : '<span class="ep-badge ' + (p.status === 'approved' ? 'ep-badge--accent' : 'ep-badge--danger') + '">' + t('app_' + p.status) + '</span>';
-    return '<article class="appl">' + avatar({ name: p.name, initials: p.initials }, 'ep-avatar--md') +
-      '<div class="appl__body"><div class="appl__head"><h2 class="mem-name">' + esc(p.name) + '</h2>' + st + '</div>' +
-      '<div class="mem-mail">' + esc(p.email) + ' · ' + t('appApplied', { d: rel(p.appliedAt) }) + '</div>' +
-      '<p class="appl__note">' + esc(L(p.note)) + '</p>' +
-      (p.status === 'pending'
-        ? '<div class="appl__act"><button class="ep-btn ep-btn--outline ep-btn--sm" data-act="app-decline" data-id="' + p.id + '">' + t('appDecline') + '</button><button class="ep-btn ep-btn--accent ep-btn--sm" data-act="app-approve" data-id="' + p.id + '">' + t('appApprove') + '</button></div>'
-        : '<div class="appl__done"><span>' + t('appDecidedBy', { who: esc(user(p.decidedBy).name), d: fdate(p.decidedAt) }) + '</span>' + (p.reason ? '<p>' + t('qL') + esc(p.reason) + t('qR') + '</p>' : '') +
-          (p.status === 'approved' && S.accounts[p.userId] ? '<button class="ep-btn ep-btn--text ep-btn--sm" data-act="mem-tab" data-v="members">' + t('appToMembers') + ' →</button>' : '') + '</div>') +
-      '</div></article>';
+  var today = new Date().toISOString().slice(0, 10);
+  var invRow = function (i) {
+    var id = S.emailToUser[i.email], u = id && user(id), over = i.expiresOn && i.expiresOn < today;
+    return '<tr><td><div class="mem-id">' + (u ? avatar(u, 'ep-avatar--md') : '<span class="ep-avatar ep-avatar--md av-sky" aria-hidden="true">@</span>') + '<div><div class="mem-name">' + (u ? esc(u.name) : '<span class="muted">' + t('accNotYet') + '</span>') + '</div><div class="mem-mail">' + esc(i.email) + '</div></div></div></td>' +
+      '<td>' + (i.isAdmin ? '<span class="ep-badge ep-badge--fill">' + t('memAdmin') + '</span>' : '<span class="muted">' + t('memMember') + '</span>') + '</td>' +
+      '<td>' + (over ? '<span class="ep-badge ep-badge--danger">' + t('accExpired', { d: fdate(i.expiresOn + 'T12:00:00') }) + '</span>' : i.expiresOn ? t('accUntil', { d: fdate(i.expiresOn + 'T12:00:00') }) : '<span class="muted">' + t('accNoEnd') + '</span>') + '</td>' +
+      '<td class="mem-act">' + (i.email === (S.user.email || '').toLowerCase() ? '' : '<button class="ep-btn ep-btn--text ep-btn--sm" data-act="acc-admin" data-v="' + esc(i.email) + '">' + t(i.isAdmin ? 'accUnadmin' : 'accMakeAdmin') + '</button><button class="ep-iconbtn mem-del" data-act="acc-remove" data-v="' + esc(i.email) + '" aria-label="' + esc(t('accRemove')) + '" title="' + esc(t('accRemove')) + '">' + icon('trash') + '</button>') + '</td></tr>';
   };
-  var appTab = '<div class="appl-filter" role="group">' +
-      '<button class="ep-chip" data-act="app-filter" data-v="open" aria-pressed="' + (af === 'open') + '">' + t('appOpen') + ' · ' + applicantsOpenN() + '</button>' +
-      '<button class="ep-chip" data-act="app-filter" data-v="done" aria-pressed="' + (af !== 'open') + '">' + t('appDone') + ' · ' + decidedN + '</button></div>' +
-    (shown.length ? '<div class="appls">' + shown.map(appCard).join('') + '</div>' : '<div class="empty"><p class="ep-card__title">' + (af === 'open' ? t('appEmpty') : t('appEmptyDone')) + '</p></div>');
+  var inv = S.invites.slice().sort(function (x, y) { return x.email.localeCompare(y.email); });
+  var accessTab = '<section class="panel" style="gap:16px;margin-bottom:32px"><h2 class="h3">' + t('accAddTitle') + '</h2><p class="hint" style="margin:0">' + t('accAddHint') + '</p>' +
+      '<div class="ep-field"><label class="ep-field__label" for="acc-emails">' + t('accEmails') + '</label><textarea class="ep-input" id="acc-emails" rows="4" placeholder="name@gmail.com"></textarea></div>' +
+      '<div class="ep-field" style="max-width:260px"><label class="ep-field__label" for="acc-until">' + t('accUntilLabel') + '</label><input class="ep-input" id="acc-until" type="date" value="' + new Date().getFullYear() + '-12-31"><span class="ep-field__hint">' + t('accUntilHint') + '</span></div>' +
+      '<div><button class="ep-btn ep-btn--accent" data-act="acc-add">' + t('accAdd') + '</button></div></section>' +
+    (inv.length ? '<div class="mem-wrap"><table class="ep-table mem-table"><thead><tr><th>' + t('accEmailCol') + '</th><th>' + t('memRole') + '</th><th>' + t('accAccessCol') + '</th><th><span class="sr">' + t('memActions') + '</span></th></tr></thead><tbody>' + inv.map(invRow).join('') + '</tbody></table></div>'
+      : '<div class="empty"><p class="ep-card__title">' + t('accEmpty') + '</p></div>');
   return nav('nutzer') + '<div class="wrap" style="max-width:1100px">' +
-    '<div class="shelf-head"><div><h1 class="h1">' + t('members') + '</h1><p class="lead" style="margin-bottom:0">' + t('memLead', { m: tp('accountsN', ids.length), a: tp('applicationsN', applicantsOpenN()) }) + '</p></div></div>' +
+    '<div class="shelf-head"><div><h1 class="h1">' + t('members') + '</h1><p class="lead" style="margin-bottom:0">' + tp('accountsN', ids.length) + '</p></div></div>' +
     '<div class="ep-tabs" role="tablist" style="margin:24px 0 24px">' +
       '<button class="ep-tab" role="tab" data-act="mem-tab" data-v="members" aria-selected="' + (tab === 'members') + '">' + t('memMembersTab') + ' <span class="ep-tab__count">' + ids.length + '</span></button>' +
-      '<button class="ep-tab" role="tab" data-act="mem-tab" data-v="applicants" aria-selected="' + (tab === 'applicants') + '">' + t('memApplicantsTab') + ' <span class="ep-tab__count">' + applicantsOpenN() + '</span></button></div>' +
-    (tab === 'members' ? memberTab : appTab) +
+      '<button class="ep-tab" role="tab" data-act="mem-tab" data-v="applicants" aria-selected="' + (tab === 'applicants') + '">' + t('accessTab') + ' <span class="ep-tab__count">' + S.invites.length + '</span></button></div>' +
+    (tab === 'members' ? memberTab : accessTab) +
   '</div>';
 }
 
@@ -1786,6 +1785,7 @@ var MOD_ACT = {
       field: t('dMemReasonF'), placeholder: t('dMemDelPh'), ok: t('memDeleteShort'), danger: true,
       onOk: function (v, withPosts) {
         if (!v || !v.trim()) return false;
+        var em = (S.accounts[id] || {}).email; S.invites = S.invites.filter(function (i) { return i.email !== em; });
         delete S.accounts[id];
         S.deletedMembers = (S.deletedMembers || []).concat([{ id: id, name: u.name, email: (acct(id) || {}).email, reason: v.trim(), date: now(), by: ME, postsRemoved: !!withPosts }]);
         if (withPosts) {
@@ -1906,8 +1906,7 @@ function toggle(arr, v) { var i = arr.indexOf(v); if (i > -1) arr.splice(i, 1); 
 
 var ACT = {
   lang: function (el) { if (UI.draft) readEditor(); lang = el.dataset.v; S.lang = lang; UI.shelf.cat = ''; save(); applyLang(); UI.menu = null; render(); },
-  login: function () { sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.href.split('#')[0] } }); },
-  'other-email': function () { UI.linkSent = null; render(); },
+  login: function () { sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.href.split('#')[0], queryParams: { prompt: 'select_account' } } }); },
   logout: function () { UI.menu = null; sb.auth.signOut().then(function () { location.href = 'index.html'; }); },
   reset: function () { UI.menu = null; render(); dialog({ title: t('dResetT'), text: t('dResetX'), ok: t('dResetOk'), danger: true, onOk: function () { var u = S.user, l = S.lang, th = S.theme; S = seed(); mergeExtras(); migrateNames(); ensureModeration(); S.user = u; S.lang = l; S.theme = th; save(); go('#/bibliothek'); toast(t('tReset')); } }); },
   theme: function () { S.theme = isDark() ? 'light' : 'dark'; save(); applyTheme(); UI.menu = null; render(); },
@@ -2083,19 +2082,21 @@ async function fetchAll() {
     sb.from('comment_likes').select('*'),
     sb.from('bookmarks').select('article_id').eq('user_id', ME),
     sb.from('reports').select('*'),
-    sb.from('notifications').select('*')
+    sb.from('notifications').select('*'),
+    sb.from('invites').select('*')
   ]);
   var bad = q.filter(function (r) { return r.error; })[0]; if (bad) throw bad.error;
   var profiles = q[0].data, rows = q[1].data, comments = q[2].data, likes = q[3].data, clikes = q[4].data;
-  var N = emptyState(); N.lang = S.lang; N.dismissed = S.dismissed; N.user = S.user; N.realAdmin = S.realAdmin;
+  var N = emptyState(); N.invites = []; N.emailToUser = {}; N.lang = S.lang; N.dismissed = S.dismissed; N.user = S.user; N.realAdmin = S.realAdmin;
+  var today = new Date().toISOString().slice(0, 10), access = {};
+  N.invites = q[8].data.map(function (i) { return { email: i.email, isAdmin: i.is_admin, expiresOn: i.expires_on }; });
+  N.invites.forEach(function (i) { if (!i.expiresOn || i.expiresOn >= today) access[i.email] = i; });
   profiles.forEach(function (p) {
+    var em = (p.email || '').toLowerCase(), inv = access[em];
     N.users[p.id] = profileToUser(p);
-    if (p.status === 'member') N.accounts[p.id] = { email: p.email, joinedAt: p.joined_at || p.applied_at, lastActive: p.last_active, admin: p.is_admin };
-    if (p.status === 'pending' || p.status === 'declined' || (p.status === 'member' && p.decided_at)) {
-      N.applicants.push({ id: p.id, name: N.users[p.id].name, initials: N.users[p.id].initials, email: p.email, appliedAt: p.applied_at, note: p.note, reason: p.reason,
-        status: p.status === 'member' ? 'approved' : p.status, decidedAt: p.decided_at, decidedBy: p.decided_by, userId: p.id });
-    }
-    if (p.status === 'removed') N.deletedMembers = (N.deletedMembers || []).concat([{ id: p.id, name: N.users[p.id].name, email: p.email, reason: p.reason, date: p.decided_at, by: p.decided_by }]);
+    N.emailToUser[em] = p.id;
+    /* Admins see the access list; everyone else simply sees all profiles */
+    if (inv || !S.realAdmin) N.accounts[p.id] = { email: p.email, joinedAt: p.joined_at || p.applied_at, lastActive: p.last_active, admin: inv ? inv.isAdmin : false };
   });
   var byId = {};
   N.articles = rows.map(function (r) {
@@ -2121,14 +2122,10 @@ async function fetchAll() {
 
 /* Der ganze Zustand als Tabellenzeilen. Gespeichert wird nur, was sich seit dem letzten Abgleich geändert hat. */
 function rowsOf() {
-  var o = { profiles: {}, articles: {}, comments: {}, likes: {}, comment_likes: {}, bookmarks: {}, reports: {}, notifications: {} };
+  var o = { invites: {}, profiles: {}, articles: {}, comments: {}, likes: {}, comment_likes: {}, bookmarks: {}, reports: {}, notifications: {} };
   Object.keys(S.users).forEach(function (id) {
-    var u = S.users[id], ac = S.accounts[id], ap = S.applicants.filter(function (x) { return x.id === id; })[0];
-    var gone = (S.deletedMembers || []).filter(function (x) { return x.id === id; }).pop();
-    var status = u.deleted ? 'removed' : ap && ap.status === 'pending' ? 'pending' : ap && ap.status === 'declined' ? 'declined' : ac ? 'member' : 'pending';
-    o.profiles[id] = { id: id, name: u.name, initials: u.initials, role: typeof u.role === 'string' ? u.role : '', bio: typeof u.bio === 'string' ? u.bio : '', avatar: u.avatar || { mode: 'color' },
-      status: status, is_admin: id === ME ? !!S.realAdmin : !!(ac && ac.admin),
-      reason: gone ? gone.reason : (ap && ap.reason) || '', decided_at: gone ? gone.date : (ap && ap.decidedAt) || null, decided_by: gone ? gone.by : (ap && ap.decidedBy) || null };
+    var u = S.users[id];
+    o.profiles[id] = { id: id, name: u.name, initials: u.initials, role: typeof u.role === 'string' ? u.role : '', bio: typeof u.bio === 'string' ? u.bio : '', avatar: u.avatar || { mode: 'color' } };
   });
   S.articles.forEach(function (a) {
     o.articles[a.id] = { id: a.id, author_id: a.authorId, status: a.status, created_at: a.createdAt, published_at: a.publishedAt || null, updated_at: a.updatedAt,
@@ -2144,11 +2141,13 @@ function rowsOf() {
   S.bookmarks.forEach(function (id) { o.bookmarks[ME + '|' + id] = { user_id: ME, article_id: id }; });
   S.reports.forEach(function (r) { o.reports[r.id] = { id: r.id, article_id: r.articleId, reporter_id: r.reporterId, reason: r.reason, text: L(r.text), created_at: r.date, status: r.status, resolved_at: r.resolvedAt || null, resolution: r.resolution || '', snapshot: r.snapshot || null }; });
   S.notifications.forEach(function (n) { o.notifications[n.id] = { id: n.id, to_user: n.to === 'admin' ? null : n.to, to_admin: n.to === 'admin', type: n.type, article_id: n.articleId || null, report_id: n.reportId || null, applicant_id: n.applicantId || null, title: n.title || null, reason: n.reason || null, created_at: n.date, read: !!n.read }; });
+  if (S.realAdmin) (S.invites || []).forEach(function (i) { o.invites[i.email] = { email: i.email, is_admin: !!i.isAdmin, expires_on: i.expiresOn || null }; });
   return o;
 }
 
 var synced = null, syncing = null, syncAgain = false;
-var TABLES = ['profiles', 'articles', 'comments', 'likes', 'comment_likes', 'bookmarks', 'reports', 'notifications'];
+var TABLES = ['invites', 'profiles', 'articles', 'comments', 'likes', 'comment_likes', 'bookmarks', 'reports', 'notifications'];
+var KEY_OF = { invites: 'email' };
 var LINKS = { likes: ['article_id', 'user_id'], comment_likes: ['comment_id', 'user_id'], bookmarks: ['user_id', 'article_id'] };
 function sync() {
   if (syncing) { syncAgain = true; return; }
@@ -2162,6 +2161,7 @@ async function pushChanges() {
   var gone = function (tb) { return Object.keys(prev[tb]).filter(function (k) { return !next[tb][k]; }); };
   /* Löschen zuerst: Beiträge nehmen Kommentare und Likes per Cascade mit */
   var del = gone('articles'); if (del.length) ok(await sb.from('articles').delete().in('id', del));
+  del = gone('invites'); if (del.length) ok(await sb.from('invites').delete().in('email', del));
   del = gone('comments'); if (del.length) ok(await sb.from('comments').delete().in('id', del));
   for (var tb in LINKS) for (var k of gone(tb)) { var m = {}; LINKS[tb].forEach(function (c) { m[c] = prev[tb][k][c]; }); ok(await sb.from(tb).delete().match(m)); }
   for (var i = 0; i < TABLES.length; i++) {
@@ -2172,7 +2172,8 @@ async function pushChanges() {
     });
     if (name === 'comments') add.sort(function (x, y) { return x.created_at.localeCompare(y.created_at); });
     if (add.length && name !== 'profiles') ok(await sb.from(name).insert(add));
-    for (var row of changed) ok(await sb.from(name).update(row).eq('id', row.id));
+    var key = KEY_OF[name] || 'id';
+    for (var row of changed) ok(await sb.from(name).update(row).eq(key, row[key]));
   }
   synced = next;
 }
@@ -2182,11 +2183,14 @@ async function enter(session) {
   ME = session.user.id;
   var r = await sb.from('profiles').select('*').eq('id', ME).single();
   if (r.error) throw r.error;
-  var p = r.data;
-  S.user = { id: ME, email: p.email, admin: p.is_admin, status: p.status, needsName: !p.name, note: p.note, reason: p.reason };
-  S.realAdmin = p.status === 'member' && p.is_admin;
+  var p = r.data, em = (p.email || '').toLowerCase();
+  var iv = await sb.from('invites').select('*').eq('email', em);
+  if (iv.error) throw iv.error;
+  var inv = iv.data[0], status = !inv ? 'noaccess' : inv.expires_on && inv.expires_on < new Date().toISOString().slice(0, 10) ? 'expired' : 'member';
+  S.user = { id: ME, email: p.email, status: status, admin: status === 'member' && inv.is_admin, needsName: !p.name, expiresOn: inv && inv.expires_on };
+  S.realAdmin = S.user.admin;
   S.users[ME] = profileToUser(p);
-  if (p.status === 'member') {
+  if (status === 'member') {
     await fetchAll();
     sb.from('profiles').update({ last_active: now() }).eq('id', ME).then(function () {});
   }
@@ -2208,15 +2212,6 @@ document.addEventListener('visibilitychange', function () {
   fetchAll().then(render, function () {});
 });
 document.addEventListener('submit', function (e) {
-  if (e.target.id === 'signin-form') {
-    e.preventDefault();
-    var email = e.target.querySelector('#signin-email').value.trim(), btn = e.target.querySelector('button'); btn.disabled = true;
-    sb.auth.signInWithOtp({ email: email, options: { emailRedirectTo: location.href.split('#')[0] } }).then(function (r) {
-      btn.disabled = false;
-      if (r.error) { console.error(r.error); toast(t('linkErr')); return; }
-      UI.linkSent = email; render();
-    });
-  }
   if (e.target.id === 'apply-form') {
     e.preventDefault();
     var nm = e.target.querySelector('#ap-name').value.trim(), noteEl = e.target.querySelector('#ap-note'), upd = { name: nm, initials: initialsOf(nm) };
@@ -2231,6 +2226,33 @@ document.addEventListener('submit', function (e) {
     });
   }
 });
+
+/* ---------- Admin: Zugangsliste ---------- */
+ACT['acc-add'] = function () {
+  var raw = document.getElementById('acc-emails').value, until = document.getElementById('acc-until').value || null;
+  var list = (raw.match(/[^\s,;<>()]+@[^\s,;<>()]+\.[^\s,;<>()]+/g) || []).map(function (e) { return e.toLowerCase(); });
+  if (!list.length) { toast(t('accNone')); return; }
+  var added = 0, renewed = 0;
+  list.filter(function (e, i) { return list.indexOf(e) === i; }).forEach(function (e) {
+    var i = S.invites.filter(function (x) { return x.email === e; })[0];
+    if (i) { i.expiresOn = until; renewed++; } else { S.invites.push({ email: e, isAdmin: false, expiresOn: until }); added++; }
+  });
+  save(); render(); toast(t('accAdded', { a: added, r: renewed }));
+};
+ACT['acc-admin'] = function (el) {
+  var i = S.invites.filter(function (x) { return x.email === el.dataset.v; })[0]; if (!i) return;
+  i.isAdmin = !i.isAdmin;
+  var id = S.emailToUser[i.email]; if (id && S.accounts[id]) S.accounts[id].admin = i.isAdmin;
+  save(); render();
+};
+ACT['acc-remove'] = function (el) {
+  var e = el.dataset.v;
+  dialog({ title: t('accRemoveT'), text: t('accRemoveX', { e: e }), ok: t('accRemove'), danger: true, onOk: function () {
+    S.invites = S.invites.filter(function (x) { return x.email !== e; });
+    var id = S.emailToUser[e]; if (id) delete S.accounts[id];
+    save(); render(); toast(t('accRemoved'));
+  } });
+};
 
 boot();
 })();
